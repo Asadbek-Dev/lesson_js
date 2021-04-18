@@ -249,14 +249,19 @@ section{
     }
     
 }
-@media screen and(max-width:537px) {
+@media screen and (max-width:537px) {
     .section__top {
         font-size: x-large;
     }
     .section__middle{
         flex-direction: column;
     }
-    
+    .section__middle aside{
+        width: 100%;
+    }
+    .section__middle article{
+        width: 60vw;
+    }
 }
 
 
