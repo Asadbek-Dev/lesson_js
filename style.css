@@ -47,6 +47,11 @@ i{
     border: 1px solid #ef7998;
     cursor: pointer;
 }
+  #hamburg{
+   font-size: xx-large;
+        color: #ef7998;
+        display: none;
+    }
 li img{
     cursor: pointer;
 }
@@ -63,12 +68,17 @@ section{
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: xx-large;
     font-family: cursive;
+}
+.section__top h1{
+    width: 70%;
+    margin-left: 140px;
 }
 .section__top span{
     color: #ef7998;
@@ -96,7 +106,7 @@ section{
 
 }
 .section__middle__img img{
-    width: 470px;
+    width: 100%;
     height: auto;
 }
 .section__middle aside{
@@ -150,6 +160,7 @@ section{
     width: 50vw;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .buttons button{
@@ -190,6 +201,7 @@ section{
     min-height: 80vh;
     margin: 20px auto;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .content .card{
@@ -208,4 +220,51 @@ section{
     display: flex;
     justify-content: space-around;
 }
+@media screen and (max-width:992px){
+    #hamburg{
+        display: block;
+    }
+    .header__link,.header__cart{
+        display: none;
+    }
+    .buttons{
+        width: 40vw;
+    }
+    .buttons button{
+        margin-top: 10px;
+        margin-left: 10px;
+    } 
+    
+    
+}
+@media screen and (max-width:825px){
+    .content{
+        justify-content: center;
+    }
+    .content .card{
+        width: 400px;
+        height: 440px;
+        background-color: #fff;
+        margin: 10px;
+    }
+    
+}
+@media screen and(max-width:537px) {
+    .section__top {
+        font-size: x-large;
+    }
+    .section__middle{
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
 
